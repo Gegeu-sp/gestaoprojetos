@@ -21,12 +21,11 @@
 </p>
 
 <div align="center">
-  <img src="screenshot.png" alt="Demonstração do projeto" width="700"/>
 </div>
 
 ## 🎓 Contexto
 
-Este projeto está sendo desenvolvido como parte da avaliação da disciplina de **[PROGRAMAÇÃO DE SOLUÇÕES COMPUTACIONAIS]** do **2º semestre** do curso de **Análise e Desenvolvimento de Sistemas** da **Universidade Anhembi Morumbi**. O objetivo é aplicar os conceitos aprendidos na Disciplinas/UCs para criar uma solução de software funcional.
+Este projeto está sendo desenvolvido como parte da avaliação da disciplina de **PROGRAMAÇÃO DE SOLUÇÕES COMPUTACIONAIS** do **2º semestre** do curso de **Análise e Desenvolvimento de Sistemas** da **Universidade Anhembi Morumbi**. O objetivo é aplicar os conceitos aprendidos na Disciplinas/UCs para criar uma solução de software funcional.
 
 ## 🎯 Sobre o Projeto
 
