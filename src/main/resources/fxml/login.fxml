@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="20" alignment="CENTER" style="-fx-padding: 30; -fx-background-color: #f8f9fa;" 
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.gestaoprojetos.controller.LoginController">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <!-- Título -->
+    <Label text="Sistema de Gestão de Projetos" 
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;">
+        <padding>
+            <Insets bottom="20"/>
+        </padding>
+    </Label>
+    
+    <!-- Formulário -->
+    <GridPane hgap="15" vgap="15" alignment="CENTER">
+        <Label text="Login:" GridPane.rowIndex="0" GridPane.columnIndex="0" 
+               style="-fx-font-weight: bold; -fx-text-fill: #34495e;"/>
+        <TextField fx:id="txtLogin" promptText="Digite seu login" 
+                   GridPane.rowIndex="0" GridPane.columnIndex="1" 
+                   style="-fx-pref-width: 250px; -fx-border-color: #bdc3c7; -fx-border-radius: 5;"/>
+        
+        <Label text="Senha:" GridPane.rowIndex="1" GridPane.columnIndex="0" 
+               style="-fx-font-weight: bold; -fx-text-fill: #34495e;"/>
+        <PasswordField fx:id="txtSenha" promptText="Digite sua senha" 
+                       GridPane.rowIndex="1" GridPane.columnIndex="1" 
+                       style="-fx-pref-width: 250px; -fx-border-color: #bdc3c7; -fx-border-radius: 5;"/>
+    </GridPane>
+    
+    <!-- Botão -->
+    <Button text="Entrar" onAction="#handleLogin" 
+            style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20; -fx-border-radius: 5; -fx-background-radius: 5;">
+        <padding>
+            <Insets top="10" right="20" bottom="10" left="20"/>
+        </padding>
+    </Button>
+    
+    <!-- Mensagem de erro -->
+    <Label fx:id="lblMensagem" textFill="#e74c3c" wrapText="true" 
+           style="-fx-font-size: 12px; -fx-text-alignment: center;"/>
+</VBox>

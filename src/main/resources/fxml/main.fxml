@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestaoprojetos.controller.MainController">
+    <top>
+        <MenuBar>
+            <Menu text="Cadastros">
+                <MenuItem text="Usuários" onAction="#abrirCadastroUsuarios"/>
+                <MenuItem text="Projetos" onAction="#abrirCadastroProjetos"/>
+                <MenuItem text="Equipes" onAction="#abrirCadastroEquipes"/>
+                <MenuItem text="Tarefas" onAction="#abrirCadastroTarefas"/>
+            </Menu>
+            <Menu text="Relatórios">
+                <MenuItem text="Dashboard" onAction="#abrirDashboard"/>
+                <MenuItem text="Relatórios" onAction="#abrirRelatorios"/>
+            </Menu>
+            <Menu text="Sistema">
+                <MenuItem text="Sair" onAction="#sair"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20; -fx-background-color: #f8f9fa;">
+            <Label fx:id="lblUsuarioLogado" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+            
+            <!-- Cards de informações -->
+            <HBox spacing="20" alignment="CENTER">
+                <VBox style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+                    <Label text="Total de Projetos" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;"/>
+                    <Label fx:id="lblTotalProjetos" text="0" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #3498db;"/>
+                </VBox>
+                
+                <VBox style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+                    <Label text="Projetos em Andamento" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;"/>
+                    <Label fx:id="lblProjetosAndamento" text="0" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #2ecc71;"/>
+                </VBox>
+                
+                <VBox style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+                    <Label text="Projetos com Risco" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;"/>
+                    <Label fx:id="lblProjetosRisco" text="0" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                </VBox>
+            </HBox>
+            
+            <!-- Tabela de projetos -->
+            <TableView fx:id="tabelaProjetos" prefHeight="300">
+                <columns>
+                    <TableColumn fx:id="colunaNome" prefWidth="200" text="Nome do Projeto"/>
+                    <TableColumn fx:id="colunaStatus" prefWidth="100" text="Status"/>
+                    <TableColumn fx:id="colunaGerente" prefWidth="150" text="Gerente"/>
+                    <TableColumn fx:id="colunaPrevisao" prefWidth="120" text="Previsão Término"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

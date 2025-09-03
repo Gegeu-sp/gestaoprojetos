@@ -1,0 +1,124 @@
+/* Estilos gerais */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 12px;
+    font-size: 12px; /* compatibilidade */
+}
+
+/* Botões */
+.button {
+    -fx-background-color: #3498db;
+    background-color: #3498db; /* compatibilidade */
+    -fx-text-fill: white;
+    color: white; /* compatibilidade */
+    -fx-padding: 8 15;
+    padding: 8px 15px; /* compatibilidade */
+    -fx-cursor: hand;
+    cursor: pointer; /* compatibilidade aproximada */
+    -fx-border-radius: 5;
+    border-radius: 5px; /* compatibilidade */
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    background-color: #2980b9; /* compatibilidade */
+}
+
+.button:pressed {
+    -fx-background-color: #21618c;
+    background-color: #21618c; /* compatibilidade */
+}
+
+/* Campos de texto */
+.text-field, .password-field {
+    -fx-border-color: #bdc3c7;
+    border-color: #bdc3c7; /* compatibilidade */
+    -fx-border-radius: 5;
+    border-radius: 5px; /* compatibilidade */
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+    padding: 5px; /* compatibilidade */
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3498db;
+    border-color: #3498db; /* compatibilidade */
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.3), 5, 0, 0, 0);
+    /* efeito do JavaFX não tem equivalente direto em CSS padrão aqui */
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #2c3e50;
+    color: #2c3e50; /* compatibilidade */
+}
+
+.label-header {
+    -fx-font-size: 16px;
+    font-size: 16px; /* compatibilidade */
+    -fx-font-weight: bold;
+    font-weight: bold; /* compatibilidade */
+    -fx-text-fill: #2c3e50;
+    color: #2c3e50; /* compatibilidade */
+}
+
+/* Tabelas */
+.table-view {
+    -fx-border-color: #bdc3c7;
+    border-color: #bdc3c7; /* compatibilidade */
+    -fx-border-width: 1px;
+    border-width: 1px; /* compatibilidade */
+    -fx-background-color: white;
+    background-color: white; /* compatibilidade */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3498db;
+    background-color: #3498db; /* compatibilidade */
+    -fx-text-fill: white;
+    color: white; /* compatibilidade */
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+    /* alinhamento JavaFX específico; sem mapeamento direto para CSS padrão aqui */
+}
+
+/* Cards */
+.card {
+    -fx-background-color: white;
+    background-color: white; /* compatibilidade */
+    -fx-padding: 20;
+    padding: 20px; /* compatibilidade */
+    -fx-border-radius: 10;
+    border-radius: 10px; /* compatibilidade */
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+    /* efeito JavaFX sem equivalente direto em CSS padrão */
+}
+
+/* Menu */
+.menu-bar {
+    -fx-background-color: #34495e;
+    background-color: #34495e; /* compatibilidade */
+}
+
+.menu {
+    -fx-text-fill: white;
+    color: white; /* compatibilidade */
+}
+
+.menu-item {
+    -fx-text-fill: #2c3e50;
+    color: #2c3e50; /* compatibilidade */
+}
+
+/* Mensagens de erro */
+.label-error {
+    -fx-text-fill: #e74c3c;
+    color: #e74c3c; /* compatibilidade */
+    -fx-font-size: 12px;
+    font-size: 12px; /* compatibilidade */
+}
