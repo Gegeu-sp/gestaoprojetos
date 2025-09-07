@@ -69,9 +69,9 @@ $ npm run dev
 
 Este projeto foi idealizado e desenvolvido em equipe pelos seguintes alunos:
 
-* **[Nome Completo do Aluno 1]** - [LinkedIn](https://www.linkedin.com/in/SEU_USUARIO_AQUI)
-* **[Nome Completo do Aluno 2]** - [LinkedIn](https://www.linkedin.com/in/SEU_USUARIO_AQUI)
 * **Argeu Rodrigues** - [LinkedIn](https://www.linkedin.com/in/SEU_USUARIO_AQUI)
+* **Josevaldo dos Santos Lima** - [LinkedIn](https://www.linkedin.com/in/SEU_USUARIO_AQUI)
+* **Victor Souza da Rocha** - [LinkedIn](https://www.linkedin.com/in/SEU_USUARIO_AQUI)
 
 ---
 
@@ -106,5 +106,5 @@ Os principais aprendizados e tecnologias aplicadas foram:
 
 <br>
 <p align="center">
-  2º semestre de ADS da Anhembi Morumbi.
+  2º semestre de Análise e Desenvolvimento de Sistemas (ADS) Anhembi Morumbi.
 </p>
