@@ -1,0 +1,259 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .layer-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .component-title { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #333; }
+      .component-text { font-family: Arial, sans-serif; font-size: 10px; fill: #555; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .relationship { stroke: #999; stroke-width: 1; stroke-dasharray: 5,5; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" class="layer-title" fill="#2c3e50" font-size="18">
+    Sistema de Gestão de Projetos - Arquitetura Completa
+  </text>
+  
+  <!-- UI Layer -->
+  <rect x="50" y="60" width="1100" height="120" fill="#3498db" rx="5"/>
+  <text x="70" y="80" class="layer-title">CAMADA DE APRESENTAÇÃO (UI - Swing)</text>
+  
+  <!-- UI Components -->
+  <rect x="70" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="145" y="110" text-anchor="middle" class="component-title">MainFrame</text>
+  <text x="75" y="125" class="component-text">• Login System</text>
+  <text x="75" y="135" class="component-text">• Dashboard</text>
+  <text x="75" y="145" class="component-text">• Navigation</text>
+  <text x="75" y="155" class="component-text">• User Management</text>
+  
+  <rect x="240" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="315" y="110" text-anchor="middle" class="component-title">UsuariosPanel</text>
+  <text x="245" y="125" class="component-text">• CRUD Operations</text>
+  <text x="245" y="135" class="component-text">• Profile Management</text>
+  <text x="245" y="145" class="component-text">• Validation</text>
+  <text x="245" y="155" class="component-text">• BCrypt Security</text>
+  
+  <rect x="410" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="485" y="110" text-anchor="middle" class="component-title">ProjetosPanel</text>
+  <text x="415" y="125" class="component-text">• Project CRUD</text>
+  <text x="415" y="135" class="component-text">• Status Control</text>
+  <text x="415" y="145" class="component-text">• Date Management</text>
+  <text x="415" y="155" class="component-text">• Manager Assignment</text>
+  
+  <rect x="580" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="655" y="110" text-anchor="middle" class="component-title">TarefasPanel</text>
+  <text x="585" y="125" class="component-text">• Task Management</text>
+  <text x="585" y="135" class="component-text">• Assignment</text>
+  <text x="585" y="145" class="component-text">• Progress Tracking</text>
+  <text x="585" y="155" class="component-text">• Status Updates</text>
+  
+  <rect x="750" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="825" y="110" text-anchor="middle" class="component-title">EquipesPanel</text>
+  <text x="755" y="125" class="component-text">• Team Formation</text>
+  <text x="755" y="135" class="component-text">• Member Management</text>
+  <text x="755" y="145" class="component-text">• Project Assignment</text>
+  <text x="755" y="155" class="component-text">• Reports</text>
+  
+  <rect x="920" y="90" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="995" y="110" text-anchor="middle" class="component-title">AlocacoesPanel</text>
+  <text x="925" y="125" class="component-text">• Project-Team Link</text>
+  <text x="925" y="135" class="component-text">• Allocation Reports</text>
+  <text x="925" y="145" class="component-text">• Resource Planning</text>
+  <text x="925" y="155" class="component-text">• N:N Management</text>
+  
+  <!-- Service Layer -->
+  <rect x="50" y="200" width="1100" height="120" fill="#27ae60" rx="5"/>
+  <text x="70" y="220" class="layer-title">CAMADA DE SERVIÇOS (Business Logic)</text>
+  
+  <!-- Service Components -->
+  <rect x="70" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="145" y="250" text-anchor="middle" class="component-title">UsuarioService</text>
+  <text x="75" y="265" class="component-text">• Business Rules</text>
+  <text x="75" y="275" class="component-text">• Password Hashing</text>
+  <text x="75" y="285" class="component-text">• Profile Validation</text>
+  <text x="75" y="295" class="component-text">• Authentication</text>
+  
+  <rect x="240" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="315" y="250" text-anchor="middle" class="component-title">ProjetoService</text>
+  <text x="245" y="265" class="component-text">• Project Logic</text>
+  <text x="245" y="275" class="component-text">• Status Management</text>
+  <text x="245" y="285" class="component-text">• Date Validation</text>
+  <text x="245" y="295" class="component-text">• Manager Control</text>
+  
+  <rect x="410" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="485" y="250" text-anchor="middle" class="component-title">TarefaService</text>
+  <text x="415" y="265" class="component-text">• Task Workflow</text>
+  <text x="415" y="275" class="component-text">• Dependencies</text>
+  <text x="415" y="285" class="component-text">• Progress Logic</text>
+  <text x="415" y="295" class="component-text">• Notifications</text>
+  
+  <rect x="580" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="655" y="250" text-anchor="middle" class="component-title">EquipeService</text>
+  <text x="585" y="265" class="component-text">• Team Formation</text>
+  <text x="585" y="275" class="component-text">• Member Assignment</text>
+  <text x="585" y="285" class="component-text">• Allocation Logic</text>
+  <text x="585" y="295" class="component-text">• Reports Generation</text>
+  
+  <rect x="750" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="825" y="250" text-anchor="middle" class="component-title">ProjetoEquipeService</text>
+  <text x="755" y="265" class="component-text">• N:N Relationships</text>
+  <text x="755" y="275" class="component-text">• Link Management</text>
+  <text x="755" y="285" class="component-text">• Allocation Reports</text>
+  <text x="755" y="295" class="component-text">• Resource Control</text>
+  
+  <rect x="920" y="230" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="995" y="250" text-anchor="middle" class="component-title">NotificationManager</text>
+  <text x="925" y="265" class="component-text">• Observer Pattern</text>
+  <text x="925" y="275" class="component-text">• Event Handling</text>
+  <text x="925" y="285" class="component-text">• Real-time Updates</text>
+  <text x="925" y="295" class="component-text">• UI Synchronization</text>
+  
+  <!-- DAO Layer -->
+  <rect x="50" y="340" width="1100" height="120" fill="#e74c3c" rx="5"/>
+  <text x="70" y="360" class="layer-title">CAMADA DE ACESSO A DADOS (DAO Pattern)</text>
+  
+  <!-- DAO Components -->
+  <rect x="70" y="370" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="145" y="390" text-anchor="middle" class="component-title">UsuarioDaoImpl</text>
+  <text x="75" y="405" class="component-text">• SQL Operations</text>
+  <text x="75" y="415" class="component-text">• Prepared Statements</text>
+  <text x="75" y="425" class="component-text">• Result Mapping</text>
+  <text x="75" y="435" class="component-text">• Transaction Control</text>
+  
+  <rect x="240" y="370" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="315" y="390" text-anchor="middle" class="component-title">ProjetoDaoImpl</text>
+  <text x="245" y="405" class="component-text">• Project CRUD SQL</text>
+  <text x="245" y="415" class="component-text">• Complex Queries</text>
+  <text x="245" y="425" class="component-text">• Join Operations</text>
+  <text x="245" y="435" class="component-text">• Data Integrity</text>
+  
+  <rect x="410" y="370" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="485" y="390" text-anchor="middle" class="component-title">TarefaDaoImpl</text>
+  <text x="415" y="405" class="component-text">• Task SQL Operations</text>
+  <text x="415" y="415" class="component-text">• Project Relations</text>
+  <text x="415" y="425" class="component-text">• User Assignment</text>
+  <text x="415" y="435" class="component-text">• Status Queries</text>
+  
+  <rect x="580" y="370" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="655" y="390" text-anchor="middle" class="component-title">EquipeDaoImpl</text>
+  <text x="585" y="405" class="component-text">• Team CRUD</text>
+  <text x="585" y="415" class="component-text">• Member Queries</text>
+  <text x="585" y="425" class="component-text">• Project Links</text>
+  <text x="585" y="435" class="component-text">• Report Data</text>
+  
+  <rect x="750" y="370" width="150" height="80" fill="#ecf0f1" rx="3"/>
+  <text x="825" y="390" text-anchor="middle" class="component-title">ProjetoEquipeDaoImpl</text>
+  <text x="755" y="405" class="component-text">• N:N Table Management</text>
+  <text x="755" y="415" class="component-text">• Link/Unlink Operations</text>
+  <text x="755" y="425" class="component-text">• Relationship Queries</text>
+  <text x="755" y="435" class="component-text">• Allocation Data</text>
+  
+  <!-- Configuration Layer -->
+  <rect x="50" y="480" width="1100" height="80" fill="#9b59b6" rx="5"/>
+  <text x="70" y="500" class="layer-title">CAMADA DE CONFIGURAÇÃO</text>
+  
+  <rect x="200" y="510" width="200" height="40" fill="#ecf0f1" rx="3"/>
+  <text x="300" y="530" text-anchor="middle" class="component-title">DataSourceProvider</text>
+  <text x="205" y="540" class="component-text">• Singleton Pattern • HikariCP Pool</text>
+  
+  <rect x="420" y="510" width="200" height="40" fill="#ecf0f1" rx="3"/>
+  <text x="520" y="530" text-anchor="middle" class="component-title">AppProperties</text>
+  <text x="425" y="540" class="component-text">• Configuration Management • Environment</text>
+  
+  <rect x="640" y="510" width="200" height="40" fill="#ecf0f1" rx="3"/>
+  <text x="740" y="530" text-anchor="middle" class="component-title">Connection Pool</text>
+  <text x="645" y="540" class="component-text">• Performance Optimization • Resource Control</text>
+  
+  <!-- Database Layer -->
+  <rect x="50" y="580" width="1100" height="160" fill="#34495e" rx="5"/>
+  <text x="70" y="600" class="layer-title">BANCO DE DADOS MySQL 8.3.0</text>
+  
+  <!-- Database Tables -->
+  <rect x="100" y="620" width="180" height="100" fill="#ecf0f1" rx="3"/>
+  <text x="190" y="640" text-anchor="middle" class="component-title">users</text>
+  <text x="105" y="655" class="component-text">• id (PK), full_name</text>
+  <text x="105" y="665" class="component-text">• cpf, email, position</text>
+  <text x="105" y="675" class="component-text">• login, password_hash</text>
+  <text x="105" y="685" class="component-text">• profile, birth_date</text>
+  <text x="105" y="695" class="component-text">• created_at, updated_at</text>
+  
+  <rect x="300" y="620" width="180" height="100" fill="#ecf0f1" rx="3"/>
+  <text x="390" y="640" text-anchor="middle" class="component-title">projects</text>
+  <text x="305" y="655" class="component-text">• id (PK), name</text>
+  <text x="305" y="665" class="component-text">• description, start_date</text>
+  <text x="305" y="675" class="component-text">• end_date_planned</text>
+  <text x="305" y="685" class="component-text">• end_date_actual</text>
+  <text x="305" y="695" class="component-text">• status, manager_id (FK)</text>
+  
+  <rect x="500" y="620" width="180" height="100" fill="#ecf0f1" rx="3"/>
+  <text x="590" y="640" text-anchor="middle" class="component-title">tasks</text>
+  <text x="505" y="655" class="component-text">• id (PK), title</text>
+  <text x="505" y="665" class="component-text">• description, project_id (FK)</text>
+  <text x="505" y="675" class="component-text">• assignee_id (FK)</text>
+  <text x="505" y="685" class="component-text">• status, dates</text>
+  <text x="505" y="695" class="component-text">• created_at, updated_at</text>
+  
+  <rect x="700" y="620" width="180" height="100" fill="#ecf0f1" rx="3"/>
+  <text x="790" y="640" text-anchor="middle" class="component-title">teams</text>
+  <text x="705" y="655" class="component-text">• id (PK), name</text>
+  <text x="705" y="665" class="component-text">• description</text>
+  <text x="705" y="675" class="component-text">• created_at</text>
+  <text x="705" y="685" class="component-text">• updated_at</text>
+  
+  <rect x="900" y="620" width="180" height="100" fill="#ecf0f1" rx="3"/>
+  <text x="990" y="640" text-anchor="middle" class="component-title">project_teams</text>
+  <text x="905" y="655" class="component-text">• project_id (FK)</text>
+  <text x="905" y="665" class="component-text">• team_id (FK)</text>
+  <text x="905" y="675" class="component-text">• created_at</text>
+  <text x="905" y="685" class="component-text">• N:N Relationship</text>
+  
+  <!-- Arrows showing data flow -->
+  <line x1="145" y1="170" x2="145" y2="230" class="arrow"/>
+  <line x1="315" y1="170" x2="315" y2="230" class="arrow"/>
+  <line x1="485" y1="170" x2="485" y2="230" class="arrow"/>
+  <line x1="655" y1="170" x2="655" y2="230" class="arrow"/>
+  <line x1="825" y1="170" x2="825" y2="230" class="arrow"/>
+  <line x1="995" y1="170" x2="995" y2="230" class="arrow"/>
+  
+  <line x1="145" y1="310" x2="145" y2="370" class="arrow"/>
+  <line x1="315" y1="310" x2="315" y2="370" class="arrow"/>
+  <line x1="485" y1="310" x2="485" y2="370" class="arrow"/>
+  <line x1="655" y1="310" x2="655" y2="370" class="arrow"/>
+  <line x1="825" y1="310" x2="825" y2="370" class="arrow"/>
+  
+  <line x1="300" y1="450" x2="300" y2="510" class="arrow"/>
+  <line x1="520" y1="450" x2="520" y2="510" class="arrow"/>
+  <line x1="740" y1="450" x2="740" y2="510" class="arrow"/>
+  
+  <line x1="520" y1="550" x2="520" y2="620" class="arrow"/>
+  
+  <!-- Relationship lines between entities -->
+  <line x1="390" y1="720" x2="590" y2="720" class="relationship"/>
+  <text x="490" y="735" text-anchor="middle" class="component-text">1:N</text>
+  
+  <line x1="190" y1="720" x2="390" y2="720" class="relationship"/>
+  <text x="290" y="735" text-anchor="middle" class="component-text">1:N</text>
+  
+  <line x1="590" y1="720" x2="190" y2="720" class="relationship"/>
+  <text x="390" y="750" text-anchor="middle" class="component-text">N:1</text>
+  
+  <line x1="790" y1="720" x2="990" y2="720" class="relationship"/>
+  <text x="890" y="735" text-anchor="middle" class="component-text">1:N</text>
+  
+  <line x1="390" y1="720" x2="990" y2="720" class="relationship"/>
+  <text x="690" y="750" text-anchor="middle" class="component-text">N:N</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="750" width="300" height="40" fill="#f8f9fa" stroke="#ddd" rx="3"/>
+  <text x="60" y="770" class="component-title">Legenda:</text>
+  <line x1="120" y1="765" x2="140" y2="765" class="arrow"/>
+  <text x="145" y="770" class="component-text">Fluxo de Dados</text>
+  <line x1="220" y1="765" x2="240" y2="765" class="relationship"/>
+  <text x="245" y="770" class="component-text">Relacionamentos</text>
+</svg>
