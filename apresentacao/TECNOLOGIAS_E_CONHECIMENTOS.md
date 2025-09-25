@@ -664,4 +664,4 @@ public class DaoFactory {
 
 ---
 
-**Este documento representa o conhecimento técnico sólido adquirido durante o desenvolvimento do Sistema de Gestão de Projetos, demonstrando competência em desenvolvimento de software completo e profissional.**
+**Este documento representa o conhecimento técnico adquirido durante o desenvolvimento do Sistema de Gestão de Projetos, demonstrando competência em desenvolvimento de software completo e profissional.**
