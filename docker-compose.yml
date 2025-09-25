@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: gestao_projetos_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gestao_projetos
+      MYSQL_USER: gp
+      MYSQL_PASSWORD: gp123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      
+  java:
+    image: maven:3.8-eclipse-temurin-11
+    container_name: gestao_projetos_java
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: mvn clean compile exec:java
+    depends_on:
+      mysql:
+        condition: service_healthy
