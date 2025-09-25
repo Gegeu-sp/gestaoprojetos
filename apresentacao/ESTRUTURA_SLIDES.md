@@ -17,9 +17,8 @@
 **Conteúdo:**
 - 🎯 **Sistema de Gestão de Projetos**
 - 💻 **Aplicação Desktop Java com MySQL**
-- 👨‍💻 **Desenvolvido por: [Seu Nome]**
-- 📅 **Data: [Data da Apresentação]**
-- 🎓 **Disciplina: [Nome da Disciplina]**
+- 👨‍💻 **Desenvolvido pelos Alunos: Argeu Rodrigues, Josevaldo dos Santos Lima e Victor Souza da Rocha**
+- 🎓 **Disciplina: Programação de Soluções Computacionais**
 
 **Elementos Visuais:**
 - Logo da instituição
@@ -1027,5 +1026,3 @@ String hashedPassword = BCrypt.hashpw(plainPassword, BCrypt.gensalt(12));
 - 🤝 **Interação** com a audiência
 
 ---
-
-**Esta estrutura fornece uma base completa para criar uma apresentação profissional e impactante sobre o Sistema de Gestão de Projetos desenvolvido.**

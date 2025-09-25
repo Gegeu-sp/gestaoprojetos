@@ -3,9 +3,9 @@
 ## 🎯 Slide 1: Título e Introdução
 **Título:** Sistema de Gestão de Projetos  
 **Subtítulo:** Desenvolvimento de Aplicação Desktop Completa em Java  
-**Autor:** [Nome do Desenvolvedor]  
-**Instituição:** [Nome da Faculdade]  
-**Data:** [Data da Apresentação]  
+**Nomes dos alunos:** Argeu Rodrigues, Josevaldo dos Santos Lima e Victor Souza da Rocha
+**Instituição:** Anhembi Morumbi
+**Professor:** Diego Martins
 
 ---
 
