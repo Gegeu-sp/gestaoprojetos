@@ -170,7 +170,7 @@ Este projeto foi idealizado e desenvolvido em equipe pelos seguintes alunos:
 
 * **Argeu Rodrigues** - [LinkedIn](https://www.linkedin.com/in/argeu-rodrigues-9a6b7174)
 * **Josevaldo dos Santos Lima** - [LinkedIn](https://www.linkedin.com/in/josevaldo-dos-santos-lima-47919714b)
-* **Victor Souza da Rocha** - [LinkedIn](https://www.linkedin.com/in/victor-souza-da-rocha)
+* **Victor Souza da Rocha** - [LinkedIn](https://www.linkedin.com/in/victorsouzarocha/)
 
 ---
 
